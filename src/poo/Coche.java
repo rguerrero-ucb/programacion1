@@ -7,6 +7,7 @@ public class Coche {
     public int velocidadMaxima;
     private int velocidad;
     // Constructor
+    
     public Coche(String modeloNuevo) {
         color = "gris";
         modelo = modeloNuevo;
@@ -15,15 +16,15 @@ public class Coche {
     }
     // Métodos
     public void acelerar(int incremento) {        
-        velocidad += incremento;
-        if (velocidad > velocidadMaxima) {
-            velocidad = velocidadMaxima;
+        this.velocidad += incremento;
+        if (this.velocidad > this.velocidadMaxima) {
+            this.velocidad = this.velocidadMaxima;
         }
     }
     public void frenar(int decremento) {
-        velocidad -= decremento;
-        if (velocidad < 0) {
-            velocidad = 0;
+        this.velocidad -= decremento;
+        if (this.velocidad < 0) {
+            this.velocidad = 0;
         }
     }
     public void mostrarEstado() {

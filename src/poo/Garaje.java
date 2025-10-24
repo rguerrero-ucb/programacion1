@@ -15,5 +15,14 @@ public class Garaje {
 
         miCoche.acelerar(200);
         miCoche.mostrarEstado();
+        //miCoche.Vaciar();
+
+
+        Volqueta miVolqueta = new Volqueta("Volvo");
+        miVolqueta.color = "Amarillo";
+        miVolqueta.velocidadMaxima = 100;
+        miVolqueta.acelerar(80);
+        miVolqueta.mostrarEstado();
+        miVolqueta.Vaciar();
     }
 }
