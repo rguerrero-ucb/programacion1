@@ -2,7 +2,7 @@ package banco;
 
 import java.util.ArrayList;
 
-public class Banco {
+public class Lista {
     public static void main(String[] args) {
         Cuenta cta1 = new Cuenta(1001, "Ana Perez", 500.0);
         //cta1.mostrarSaldo();
