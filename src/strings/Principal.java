@@ -13,7 +13,6 @@ public class Principal {
 
         System.out.println("texto 1 mide " + texto1.length());
         System.out.println("cacater 5 " + texto2.charAt(5));
-
         System.out.println(texto2.toUpperCase());
 
         String data = "20|pedro|2000";
@@ -32,7 +31,6 @@ public class Principal {
         String texto3 = "  hola que tal   ";
         System.out.println(">" + texto3 + "<");
         System.out.println(">" + texto3.trim() + "<");
-
         System.out.println(texto3.replace(" ", "_"));
         System.out.println(texto3.substring(2, 6));
         System.out.println("posición e 'que': " + texto3.indexOf("que"));
@@ -43,5 +41,26 @@ public class Principal {
         if (texto2.endsWith("tal")) {
             System.out.println("Termina con tal...");
         }
+
+        String palindromo = "Anita lava la tina";
+        if (esPalindromo(palindromo)) {
+            System.out.println("Es palíndromo");
+        } else {
+            System.out.println("No es palíndromo");
+        }
+    }
+
+    public static boolean esPalindromo(String texto) {
+        String textoLimpio = texto.replace(" ", "");
+        textoLimpio = textoLimpio.toLowerCase();
+        textoLimpio = textoLimpio.trim();
+
+        int longitud = textoLimpio.length();
+        for (int i = 0; i < longitud / 2; i++) {
+            if (textoLimpio.charAt(i) != textoLimpio.charAt(longitud - 1 - i)) {
+                return false;
+            }
+        }
+        return true;
     }
 }
