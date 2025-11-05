@@ -7,7 +7,8 @@ public class IntercambioDemo {
         System.out.println("Antes del intercambio:");
         Util.imprimir(datos);
         
-        Ordenador.intercambio(datos);
+        //Ordenador.intercambio(datos);
+        Ordenador.seleccion(datos);
         
         System.out.println("Después del intercambio:");
         Util.imprimir(datos);

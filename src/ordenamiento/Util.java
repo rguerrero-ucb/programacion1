@@ -3,6 +3,9 @@ package ordenamiento;
 import java.util.Random;
 
 public class Util {
+    public static int[] clone(int v[]) {
+
+    }
 
     public static int[] generar(int tam) {
         int v[] = new int[tam];
