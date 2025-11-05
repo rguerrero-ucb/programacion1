@@ -4,7 +4,11 @@ import java.util.Random;
 
 public class Util {
     public static int[] clone(int v[]) {
-
+        int copia[] = new int[v.length];
+        for (int i = 0; i < v.length; i++) {
+            copia[i] = v[i];
+        }
+        return copia;
     }
 
     public static int[] generar(int tam) {
