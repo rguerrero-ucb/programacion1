@@ -1,5 +1,8 @@
 package ordenamiento;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class OrdenarDemo {
     public static void main(String[] args) {
         int [] datos = Util.generar(50000);
@@ -39,6 +42,12 @@ public class OrdenarDemo {
         // long fin = System.currentTimeMillis();
         // long duracion = fin - inicio;
         // System.out.println("Duracion en milisegundos: " + duracion);
+
+        Integer a[] = {5, 3, 8, 4, 2};
+
+        Arrays.sort(a, Collections.reverseOrder());
+        System.out.println(Arrays.toString(a));
+
 
     }
 }
