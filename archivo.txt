@@ -1,0 +1,2 @@
+Hola, este es un archivo de texto.
+Esta es la segunda línea.

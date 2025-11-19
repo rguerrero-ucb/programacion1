@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class Errores {
     public static void main(String[] args) {    
         try{
-            int numero = dividir(4, 2);
+            int numero = dividir(4, 20);
             System.out.println("El número es: " + numero);
         } catch (ArithmeticException e){
             JOptionPane.showMessageDialog(null, "Error: " + e.getMessage(),
